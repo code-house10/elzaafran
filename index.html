@@ -236,6 +236,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="Layer1">
 <div id="wb_Image3">
 <a href="tel:01020243788"><img src="images/free-phone-call-icon-535-thumb.png" id="Image3" alt=""></a></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var yourDomainLink = document.getElementById("yourDomainLink");
+            
+            yourDomainLink.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the default behavior of the link (opening the URL)
+                alert("This link is disabled");
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
